@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="33dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="198dp"
+            android:layout_height="50dp"
+            android:onClick="onClickDownload"
+            android:text="동기화" />
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="215dp"
+            android:layout_height="50dp"
+            android:onClick="onClickUpload"
+            android:text="새로운 이미지 게시" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row_start_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <CheckBox
+            android:id="@+id/cb_start_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앱 시작 시 자동 동기화" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+*.pyc
+*~
+__pycache__
+venv
+db.sqlite3
+/static
+.DS_Store
+curl_command.txt
+telnet_command.txt
+fcm_key.json
+google-services.json
+google_key.txt
